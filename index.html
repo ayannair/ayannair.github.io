@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio Website - Ayan Nair</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="header" class="fade">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" width="500">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="resume.pdf">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+              <p id="dynamic-text"></p>
+              <h1>Hi, I'm <span>Ayan Nair</span><br> from Boston!</h1>
+              <img src="images/home_picture.png" width = "100">
+        </div>
+        </div>
+    </div>
+    <!-----------------about------------------>
+    <div id="about" class="fade">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/headshot.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p><br>Hey guys! My name is Ayan Nair and I am a student at the <br>
+              University of Michigan's College of Engineering. I am currently <br>
+              studying Electrical Engineering.<br><br> 
+              As demonstrated by my projects, I am interested in integrating <br>
+              machine learning, artificial intelligence, hardware, and entrepreneuship <br>
+              principles to promote global wellbeing. Looking ahead, my ambition is to <br>
+              launch my own startup that provides users with easier ways to <br>
+              accomplish tasks, leveraging technology to streamline processes <br>
+              and enhance efficiency.<br><br>
+              Outside of school, you can catch me jamming out on the violin and tabla, playing table tennis,
+              or watching the occassional Manchester City soccer game. <br><br>
+              Check out my projects and social media below!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------icons------------------>
+    <div id="icons" class="fade">
+      <ul class="social-icons">
+        <li><a href="https://github.com/ayannair" target="_blank"><img src="images/github.png" alt="GitHub"></a></li>
+        <li><a href="https://www.linkedin.com/in/ayan-nair/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+
+    <!-----------------projects------------------>
+    <div id="projects" class="fade">
+      <h1 class="project-header-text">Projects</h1>
+      <ul class="project-icons">
+        <li><a href="https://docs.google.com/presentation/d/1eBLAD4LDIJI3Y1AkZ1p4hfhQUwSU5obV2lZfR422pPk/edit?usp=sharing" target="_blank"><img src="images/chest-xray.png" alt="COVID-19 Project"></a></li>
+        <li><a href="https://github.com/ayannair/pdb_atom_predictor" target="_blank"><img src="images/molecule.png" alt="PDB Project"></a></li>
+        <li><a href="https://github.com/ayannair/euros_2024_predictor" target="_blank"><img src="images/soccer-ball.png" alt="EUROS Project"></a></li>
+        <li><a href="https://www.smartcart.dev/" target="_blank"><img src="images/apple.png" alt="SmartCart Project"></a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="images/house.jpeg" alt="MHousr Project"></a></li>
+      </ul>
+    </div>
+
+    <!-----------------contact------------------>
+    <div id="contact" class="fade">
+      <h1 class="contact-header-text">Contact Me!</h1>
+      <div class="mail-icon">
+        <a href="#" id="compose-mail">
+          <img src="images/mail.png" alt="Mail Icon">
+        </a>
+      </div>
+    </div>
+    <main>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
