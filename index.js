@@ -119,7 +119,7 @@ window.addEventListener('scroll', function() {
     const bottomPosition = rect.bottom;
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    if (topPosition < windowHeight*0.7) {
+    if (topPosition < windowHeight*0.5) {
         contactSection.classList.add('fade');
     } else {
         contactSection.classList.remove('fade');
