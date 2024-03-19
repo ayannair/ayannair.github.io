@@ -88,6 +88,30 @@ window.addEventListener('scroll', function() {
     }
 });
 
+window.addEventListener('scroll', function() {
+    // Get the Contact section element
+    const contactSection = document.getElementById('contact');
+    
+    // Get the position of the top and bottom edges of the Contact section relative to the viewport
+    const rect = contactSection.getBoundingClientRect();
+    const topPosition = rect.top;
+    const bottomPosition = rect.bottom;
+    
+    // Get the height of the viewport
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    // Check if the top or bottom edges of the Contact section are inside the viewport
+    if (topPosition < windowHeight) {
+        // Add the fade-in class when the Contact section is partially visible in the viewport
+        contactSection.classList.add('fade');
+    } else {
+        // Remove the fade-in class if the Contact section is not visible
+        contactSection.classList.remove('fade');
+    }
+});
+
+
+
 window.addEventListener('DOMContentLoaded', function() {
     const contactLink = document.querySelector('nav ul li a[href="#contact"]');
     if (contactLink) {
@@ -112,16 +136,3 @@ function composeEmail() {
     window.location.href = mailtoLink;
 }
 
-window.addEventListener('scroll', function() {
-    const contactSection = document.getElementById('contact');
-    const rect = contactSection.getBoundingClientRect();
-    const topPosition = rect.top;
-    const bottomPosition = rect.bottom;
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-    if (topPosition < windowHeight*0.4) {
-        contactSection.classList.add('fade');
-    } else {
-        contactSection.classList.remove('fade');
-    }
-});

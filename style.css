@@ -259,8 +259,8 @@ nav ul li a:hover::after{
 }
 .contact-header-text {
     margin-top: 2%;
-    font-size: 60px;
-    margin-left: 20px;
+    font-size: 4vw;
+    margin-left: 2%;
 }
 .mail-icon img {
     width: 20vw;
